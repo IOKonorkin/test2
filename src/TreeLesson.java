@@ -7,11 +7,8 @@ import java.util.TreeMap;
 public class TreeLesson {
 	public static void main(String[] args) {
  		Map<String, Integer> hm = new TreeMap<>();
- 		hm.put("paper", 1); // null
- 		hm.put("paper", 2); // 1
- 		hm.put("paper", 3); // 2
- 		if (hm.containsKey("paper")) {
- 			//...
+ 		if (!hm.containsKey("paper")) {
+ 			hm.put("paper", 100);
  		}
  		Integer count  = hm.get("paper");
  		if (count == null) {
